@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: rgb(35, 34, 34);
+}
+
+/* Homepage */
+
+.homepage-background {
+  background-image: url(Homepage-image.jpg);
+  background-position-y: 30%;
+  background-position-x: 50%;
+  background-size: 1600px 1600px;
+}
+
+.homepage-text {
+  font-size: 64px;
+}
+
+.homepage-message {
+  width: 400px;
+}
+
+.title-flex {
+  margin-top: 100px;
+  margin-left: 100px;
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+.button {
+  font-size: 28px;
+  padding: 10px;
+  width: 240px;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(136, 158, 249);
+  border-radius: 40px;
+  border: 2px solid white;
+
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 2px 2px 8px black, -2px -2px 8px;
+}
+
+.homepage-buttons {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  gap: 20px;
+}
+/* All */
+
+/* Tanigawa */
+.tanigawa-background,
+.tsukuba-background,
+.mountains-background,
+.about-background {
+  background-color: rgb(220, 226, 249);
+}
+
+.title-section,
+.tsukuba-title-section {
+  text-align: right;
+  position: relative;
+  margin-bottom: 110px;
+}
+
+.title-text {
+  text-align: left;
+  position: absolute;
+  font-size: 80px;
+  margin-left: 19.75%;
+  margin-top: 10%;
+}
+
+h2 {
+  font-weight: 500;
+  letter-spacing: -1px;
+  font-size: 40px;
+}
+
+p {
+  letter-spacing: -1px;
+  font-size: 24px;
+  line-height: 125%;
+}
+
+header {
+  padding: 30px 10%;
+  border-bottom: 3px solid rgb(17, 26, 147);
+  background-color: rgb(136, 158, 249);
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+li {
+  text-decoration: none;
+  float: left;
+}
+
+li a {
+  padding: 34px 16px;
+  text-align: center;
+  gap: 20px;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(17, 26, 147);
+  color: white;
+}
+
+.container {
+  display: grid;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  row-gap: 100px;
+}
+
+.part-1 {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+
+  column-gap: 60px;
+  align-items: center;
+}
+
+.part-2 {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+
+  column-gap: 60px;
+  align-items: center;
+}
+
+.tanigawa {
+  display: inline-block;
+  border-radius: 40px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.tanigawa-view {
+  border-radius: 40px;
+}
+
+.how-to-get-there,
+.the-climb,
+.overall {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  align-self: start;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 1px;
+}
+
+.tanigawa-p1 {
+  grid-column: 1 / 2;
+  grid-row: 2/ 3;
+}
+
+.rest-picture {
+  float: right;
+  border-radius: 40px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.ap3 {
+  float: right;
+}
+
+/* Mountain Selection Page */
+
+.mountain-title-flex {
+  height: 600px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.mountain-title-text {
+  text-align: center;
+  width: 50%;
+}
+
+.mountain-mountains,
+.about-about-me {
+  font-size: 80px;
+}
+
+.mountain-title-sentence,
+.about-title-sentence {
+  color: rgb(95, 95, 99);
+  margin-top: 30px;
+}
+
+.centering-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 60px;
+  gap: 60px;
+}
+
+.linking-1 {
+  position: relative;
+  width: 50%;
+  display: flex;
+}
+
+.flex-link-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linking-1-text {
+  position: absolute;
+
+  color: azure;
+  font-size: 64px;
+}
+
+.selection-pic-1 {
+  filter: brightness(50%);
+}
+
+/* Tsukuba */
+
+.tsukuba-title-text {
+  text-align: left;
+  position: absolute;
+  font-size: 80px;
+  margin-left: 22.5%;
+  margin-top: 10%;
+}
+
+/* About */
+
+.about-flex {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.about-title-text {
+  text-align: center;
+  justify-content: center;
+  display: inline-block;
+  width: 50%;
+}
+
+.about-title-sentence {
+  text-align: start;
+  margin-left: 25%;
+  width: 50%;
+}
+
+.about-image {
+  border-radius: 50%;
+}
